@@ -1,4 +1,4 @@
-package user;
+package ressource;
 
 public enum TypeV {
 	A("Avion"), T("Train"), S("Bateau"), B("Bus");

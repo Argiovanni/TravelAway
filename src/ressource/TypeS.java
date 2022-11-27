@@ -1,4 +1,4 @@
-package user;
+package ressource;
 
 public enum TypeS {
 	A("Aéroport"), G("Gare"), P("Port");
