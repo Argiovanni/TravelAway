@@ -2,15 +2,15 @@ package ressource;
 
 public class Station {
 	private String nom;
+	private String ville; // adresse quand api osm 
 	private int nbVehiculeMax;
 	private Vehicule[] vehiculePresent;
-	private TypeS type;
 
-	public Station(String nom, int nbVehiculeMax, TypeS type) {
+	public Station(String nom, String ville, int nbVehiculeMax) {
 		this.nom = nom;
+		this.ville = ville;
 		this.nbVehiculeMax = nbVehiculeMax;
 		this.vehiculePresent = new Vehicule[nbVehiculeMax];
-		this.type = type;
 	}
 	
 	public String getNom() {
@@ -25,8 +25,8 @@ public class Station {
 		return vehiculePresent;
 	}
 
-	public TypeS getType() {
-		return type;
+	public String getVille() {
+		return ville;
 	}
 	
 }

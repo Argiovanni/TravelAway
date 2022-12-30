@@ -3,7 +3,7 @@ package ressource;
 public class Compagnie {
 	private String nom;
 	private Vehicule[] vehiculePossedes = new Vehicule[50];
-	private Billet[] listeBillet = new Billet[1000];
+	private Billet[] listeBillet = new Billet[1000]; // keep ?
 	
 	public Compagnie(String nom) {
 		super();

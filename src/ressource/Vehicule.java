@@ -2,15 +2,15 @@ package ressource;
 
 public class Vehicule {
 	private String id;
-	private TypeV type;
 	private int nbPlaceMax;
 	private Passager[] passagers;
+	private Station localisation;
 	private Trajet trajet;
 	
-	public Vehicule(TypeV type, int nbPlaceMax) {
-		this.type = type;
+	public Vehicule(int nbPlaceMax, Station localisation) {
 		this.nbPlaceMax = nbPlaceMax;
 		this.passagers = new Passager[nbPlaceMax];
+		this.setLocalisation(localisation);
 	}
 
 	public String getId() {
@@ -29,16 +29,20 @@ public class Vehicule {
 		this.trajet = trajet;
 	}
 
-	public TypeV getType() {
-		return type;
-	}
-
 	public int getNbPlaceMax() {
 		return nbPlaceMax;
 	}
 
 	public Passager[] getPassagers() {
 		return passagers;
+	}
+
+	public Station getLocalisation() {
+		return localisation;
+	}
+
+	public void setLocalisation(Station localisation) {
+		this.localisation = localisation;
 	}
 	
 }
